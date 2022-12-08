@@ -11,20 +11,20 @@ externalLink = ""
 series = []
 +++
 
-I am not a fan of ads, like most. Because of this I recently setup https://github.com/revanced on my phone.
+Like most people, I dislike advertisements. As a result, I just installed https://github.com/revanced on my phone.
 
-Like many phones out there youtube comes preinstalled, meaning its likely a system app. Some system apps can be disabled through the settings/appinfo. However some tricky ones, there just doesn't seem to be a way of disabling using the device itself.
+YouTube comes preinstalled on numerous phones, indicating that it is most likely a system app. Some system apps can be turned off via settings/appinfo. However, some apps are stubborn and cannot be blocked in this manner.
 
-This is where [ADB](https://forum.xda-developers.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/) comes into play. Now I'm not going to give a full tutorial on how to install it or on how to enable debugging on your phone. This site is about getting the commands quickly, with just a little pre-text.
+This is where [ADB](https://forum.xda-developers.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/) steps in. Now, I'm not going to go into detail about how to install it or enable debugging on your phone. This webpage is all about getting the commands quickly and with as minimal pre-text as possible.
 
-Any way, once you're all set, and running `adb devices` displays a device, you can run the below.
+In any case, after you're all configured and `adb devices` displays a device, you can execute the following.
 
 `adb shell pm disable-user --user 0 <package to uninstall>`
 
-That's it, done. The app is disabled.
+That's it; you're done. The app has been deactivated.
 
-If you're left wondering, "Okay but what is the package name?". Well there are two ways to find this, one is to install [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec) and find the package name in there.
+If you're thinking, "Okay, but what's the package name?" There are two ways to find this. The first is to install [App Inspector](https://play.google.com/store/apps/details?id=com.ubqsoft.sec) and look for the package name.
 
-Alternatively you can use ADB, running the following command will list all installed packages `abd shell pm list packages`.
+Alternatively, you can use ADB; the command `abd shell pm list packages` will list all installed packages.
 
-That's all!
+That's it!
