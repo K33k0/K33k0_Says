@@ -1,15 +1,13 @@
-+++
-draft = false
-date = 2022-12-15T22:00:00Z
-title = "Ubuntu: apt sources cleanup"
-description = "Fix Target package is configured multiple times"
-slug = ""
-authors = ["Kieran Wynne"]
-tags = ["ubuntu","apt"]
-categories = ["Ubuntu","Linux"]
-externalLink = ""
-series = []
-+++
+---
+date: 2022-12-16T09:35:20Z
+draft: false
+title: "Ubuntu - apt sources cleanup"
+description: "Fix Target package is configured multiple times"
+authors: ["Kieran Wynne"]
+tags: ["ubuntu","apt"]
+categories: ["Ubuntu","Linux"]
+---
+
 
 Today I discovered that a number of my Docker containers had failed, most likely due to a power outage or something. So I decided that today would be a good day to perform some server maintenance. After struggling with a slew of now-defunct Docker containers and a severe lack of storage, I started updating my packages with apt update.
 I couldn't help but notice a couple `Target package is configured multiple times` issues.
